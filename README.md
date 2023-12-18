@@ -1,4 +1,4 @@
-# sample_oracle19c_docker
+# oracle19c_sample_docker
 
 This repository provides a small `docker` `compose.yml` file to work with Oracle Enterprise 19c using Docker. This Repository is not affiliated with Oracle in any way.
 
