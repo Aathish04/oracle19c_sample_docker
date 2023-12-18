@@ -1,0 +1,8 @@
+
+programs/*
+!programs/sample.sql
+
+oradata/*
+!oradata/.placeholder
+
+.DS_Store

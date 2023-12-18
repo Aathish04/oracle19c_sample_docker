@@ -1,0 +1,24 @@
+services:
+  oracle19cee:
+    container_name: oracle19cee
+    environment:
+      ORACLE_PWD: oracle
+      ORACLE_SID: ORCL
+      ORACLE_PDB: ORCLPDB
+      ENABLE_TCPS: 'true'
+      ORACLE_EDITION: enterprise
+      ENABLE_ARCHIVELOG: 'true'
+    image: oracle/database:19.3.0-ee
+    ports:
+    - 1521:1521
+    - 5500:5500
+    - 2484:2484
+    - 8080:8080
+    ulimits:
+      nofile:
+        soft: 1024
+        hard: 65536
+      nproc: 65535
+    volumes:
+    - ./oradata/:/opt/oracle/oradata
+    - ./programs:/home/oracle/programs
