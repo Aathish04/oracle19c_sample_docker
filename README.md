@@ -25,6 +25,8 @@ An extensive write-up is available at the [linked blog post](https://aathish04.g
 9) Move into the `programs` directory from within the Container, and run `sqlplus sys/oracle@//localhost:1521/ORCL as sysdba` replacing `oracle` with the password you set and replacing other changed environment variables appropriately.
 10) Now you can run SQL commands and programs!
 
+Since port 1521 is exposed, you should also be able to run programs that connect to the database using the `JDBC`.
+
 ### Cleaning Up
 1) Remove this repository (its folder) from your computer.
 2) Delete the created Docker container
